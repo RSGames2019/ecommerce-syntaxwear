@@ -1,5 +1,5 @@
 /*header.css*/
-header {
+.header {
     position: fixed;
     top: 60px;
     left: 50%;
@@ -18,12 +18,12 @@ header {
     height: 48px;
 }
 
-.nav-center {
+.nav-center ul {
     display: flex;
     gap: 2.5rem;
 }
 
-nav-center a, nav-right a {
+.nav-center a, .nav-right a {
     font-size: 1.25rem;
     color: #333333;
 }
@@ -32,7 +32,7 @@ nav-center a, nav-right a {
     color: #7c3aed;
 }
 
-.nav-right {
+.nav-right ul{
     display: flex;
     gap: 2.5rem;
     align-items: center;
