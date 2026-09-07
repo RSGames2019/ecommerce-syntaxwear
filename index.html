@@ -21,40 +21,46 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="header">
     <!-- Logo e navegação -->
     <h1 class="logo">
       <a href="/">
         <img src="./images/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online" />
       </a>
     </h1>
-    <nav class="nav-center" aria-label="Categorias Principais">
-      <ul class="nav-list">
-        <li><a href="#">Masculino</a></li>
-        <li><a href="#">Feminino</a></li>
-        <li><a href="#">Outlet</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <img src="./images/icons/hamburguer.svg" alt="menu mobile" srcset="" />
+    </label>
+    <nav class="nav-container">
+      <nav class="nav-center" aria-label="Categorias Principais">
+        <ul>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </nav>
 
-    <nav class="nav-right" aria-label="Acesso rápido">
-      <ul>
-        <li><a href="#">Nossa lojas</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li>
-          <a href="#" aria-label="Minha conta"><img src="./images/icons/user.svg" alt="Minha conta" />
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Ajuda">
-            <img src="./images/icons/help.svg" alt="Ajuda" />
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Carrinho">
-            <img src="./images/icons/bag.svg" alt="Carrinho" />
-          </a>
-        </li>
-      </ul>
+      <nav class="nav-right" aria-label="Acesso rápido">
+        <ul>
+          <li><a href="#">Nossa lojas</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a href="#" aria-label="Minha conta"><img src="./images/icons/user.svg" alt="Minha conta" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Ajuda">
+              <img src="./images/icons/help.svg" alt="Ajuda" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Carrinho">
+              <img src="./images/icons/bag.svg" alt="Carrinho" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </nav>
   </header>
 
@@ -123,7 +129,7 @@
   <footer class="site-footer" id="footer">
     <div class="footer-content">
       <div class="footer-right">
-        <form class="newsletter-email">
+        <form class="newsletter-form">
           <label for="newsletter-email">Inscreva-se em nosso e-mail</label>
           <input type="email" id="newsletter-email" name="newsletter-email" placeholder="email@email.com" />
         </form>
@@ -198,7 +204,6 @@
     <hr />
     <div class="footer-copy">Copyright. All Rights Reserved.</div>
   </footer>
-
 </body>
 
 </html>
