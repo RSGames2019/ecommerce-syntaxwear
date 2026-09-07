@@ -112,4 +112,16 @@
         gap: 1.5rem;
         width: 100%;
     }
+
+    .nav-center a, .nav-right a {
+        width: 100%;
+        border-bottom: 1px solid #eeeeee;
+        padding: 0.3rem 0;
+        font-size: 1rem;
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .nav-container{
+        right: 0;
+    }
 }
