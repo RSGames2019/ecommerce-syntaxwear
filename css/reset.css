@@ -23,18 +23,12 @@ dd {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  min-height: 100%;
-}
 
 body {
   min-height: 100vh;
@@ -42,49 +36,35 @@ body {
   text-rendering: optimizeSpeed;
 }
 
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
+h
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
+a {
+  text-decoration: none;
 }
 
-p {
-  text-wrap: pretty;
+ul,
+ol {
+  list-style: none;
 }
 
+/* Make images easier to work with */
 img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
+picture {
   max-width: 100%;
+  display: block;
 }
 
+/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
 select {
   font: inherit;
-}
-
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-:target {
-  scroll-margin-block: 5ex;
 }
 
 @media (prefers-reduced-motion: reduce) {
