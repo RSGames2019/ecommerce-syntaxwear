@@ -48,7 +48,7 @@
     gap: 30px;
 }
 
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -56,21 +56,21 @@
     text-align: center;
 }
 
-.card-title{
+.card-title {
     color: #ededed;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-subtitle{
+.card-subtitle {
     color: #ededed;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.cta-group{
+.cta-group {
     display: flex;
     gap: 10px;
 }
@@ -80,11 +80,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, auto);
         grid-template-areas:
-            "highlight highlight" 
-        "sneaker-white sneaker-white"
-        "model sneaker-color"
-        "model sneaker-silver"
-        "sneaker-purple sneaker-purple";
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
         max-width: 100%;
         gap: 0.625rem;
     }
@@ -97,7 +97,8 @@
         min-height: 370px;
     }
 
-    .sneaker-white, .sneaker-purple{
+    .sneaker-white,
+    .sneaker-purple {
         min-height: 190px;
     }
 }
